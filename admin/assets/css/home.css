@@ -1,0 +1,66 @@
+/***************************
+            MAIN
+****************************/
+
+/*LEFT_CONTENT*/
+table{
+    width:100% !important;
+    background-color:var(--white);
+    border:1px solid rgba(1,1,1,0.2);
+    cursor:default;
+}
+
+table thead{
+    background-color:var(--dark);
+    color:var(--white);
+}
+
+table th:first-child, table td:first-child{
+    text-align:left !important;
+}
+
+.dt-column-order:before, .dt-column-order:after{
+    color:var(--lite) !important;
+}
+
+table tbody tr:hover{
+    background-color:#f1f1f1 !important;
+}
+
+
+/*RIGHT CONTENT*/
+.right_content{
+    width:0%;
+    transition:0.5s;
+}
+
+.right_content_active{
+    width:40%;
+}
+
+form label figure figcaption{
+    position:absolute;
+    bottom:0;
+    right:0.2rem;
+    color:var(--gray);
+    z-index:1;
+    font-size:25px;
+}
+
+form fieldset, fieldset input, fieldset select, fieldset textarea{
+    width:100%;
+}
+
+fieldset input, fieldset select, fieldset textarea{
+    padding:0.5rem;
+    background-color:var(--white);
+    border:1px solid rgba(1,1,1,0.2);
+    resize:none;
+}
+
+.text_caption{
+    bottom:0.5rem;
+    background-color:var(--gray);
+    color:var(--white);
+    font-size:12px;
+}
